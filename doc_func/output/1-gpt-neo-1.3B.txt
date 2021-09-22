@@ -1,0 +1,19 @@
+
+
+def is_digraph(s):
+    """Check whether a string is a digraph"""
+    for i in range(len(s) - 1, -1, -1):
+        if s[i + 1] == s[i]:
+            return False
+    return True
+
+def is_cipher(s):
+    """Check whether a string is a cipher"""
+    for i in range(len(s) - 1, -1, -1):
+        if s[i + 1] == s[i]:
+            return False
+    return True
+
+def is_permutation(s):
+    """Check whether a string is a permutation"""
+    for i in range(len(s) - 1, -1):

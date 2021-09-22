@@ -1,0 +1,27 @@
+ == 0
+
+
+def is_odd(i):
+    """Check whether an integer is odd"""
+    return i % 2!= 0
+
+
+def is_power_of_2(i):
+    """Test whether an integer is a power of 2"""
+    return is_even(i) or is_odd(i)
+
+
+def is_power_of_2_or_greater(i):
+    """Test whether an integer is a power of 2 or greater"""
+    return is_power_of_2(i) or \
+           (is_power_of_2(i) and is_even(i))
+
+
+def is_power_of_2_or_less(i):
+    """Test whether an integer is a power of 2 or less"""
+    return is_power_of_2(i) or \
+           (is_power_of_2(i) and is_odd(i) or is_even(i))
+
+
+def is_power_of_3(i):
+    """Test whether an integer is a power of

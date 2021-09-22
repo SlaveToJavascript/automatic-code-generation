@@ -1,0 +1,36 @@
+ {
+	return (i % 2 == 1)? 2 : 1;
+}
+
+inline bool operator < (const int& i1, const int& i2) {
+	return i1 < i2;
+}
+
+inline bool operator == (const int& i1, const int& i2) {
+	return i1 == i2;
+}
+
+inline bool operator!= (const int& i1, const int& i2) {
+	return!(i1 == i2);
+}
+
+inline bool operator >= (const int& i1, const int& i2) {
+	return!(i1 < i2);
+}
+
+inline bool operator > (const int& i1, const int& i2) {
+	return i1 > i2;
+}
+
+inline bool operator < (const int& i1, const int& i2) {
+	return i1 < i2;
+}
+
+inline bool operator <=(const int& i1, const int& i2) {
+	return!(i1 < i2);
+}
+
+// This function returns the signed representation of a floating point number.
+// The sign of the value is determined by the sign of the mantissa.
+template <typename T, int S = 0, int R = 0>
+inline

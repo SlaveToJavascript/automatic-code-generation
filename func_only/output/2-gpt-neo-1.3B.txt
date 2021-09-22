@@ -1,0 +1,28 @@
+ {
+  return i % 2 == 0;
+}
+
+// All tests run in the "test" subproject.
+// We create a temp directory and copy all of our files into the "test" directory.
+// In the "test" directory.
+//
+// The "test" directory is a subdirectory of "build", unless it's the "build" subproject.
+//
+// Otherwise, the "test" directory is inside of the "build" subproject.
+//
+// "test": [
+//   [                              "test_runner.py"
+//                              ]],
+//
+// "build": [
+//   [                    "build_runner.py"
+//   ]],
+//
+// "test_runner.py": [
+//   [
+//       "import os"
+//       "import subprocess"
+//   ]],
+//
+// "build_runner.py": [
+// 

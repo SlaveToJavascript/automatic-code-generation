@@ -1,0 +1,7 @@
+        ((((uint32_t)s[1])*0x4000UL)&0xFFFFUL)
+#define is_permutation(s)          (((s[1])*0x4000UL)&0xFFFFUL)
+#define is_element_valid(s, t) (((s[1])*0x4000UL)&0xFFFFUL)
+#define is_element_permitted(s, t) ((((s[1])*0x4000UL)&0xFFFFUL)==(((t[1])*0x4000UL)&0xFFFFUL))
+
+/* Defined in splay.c */
+#define is_root(s) ((s[0] == '-') || (s[1] == '-') || (s[2] == '-') || (s[3] == '-') || (s[4] == '-') || (s[5] == '-') || (s[6] == '-') || (s[7] == '-') || (s[8] == '-') || (s[9] == '-') || (s[10] == '-') || (s[11] == '-') || (s

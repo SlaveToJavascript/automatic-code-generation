@@ -7,10 +7,10 @@ folder = 'doc_func' # doc_only / func_only / doc_func
 path = f"/Users/cindy/code-generation/{folder}/input"
 os.chdir(path)
 
-device = "cpu"  # "cpu" or "cuda" or "cuda:n" where n is specific GPU to use
-modelname = "EleutherAI/gpt-neo-2.7B"
-tokenizer = AutoTokenizer.from_pretrained(modelname)
-model = AutoModelForCausalLM.from_pretrained(modelname)
+device = "cpu"
+modelname = "gpt-neo-1.3B" # gpt-neo-2.7B / gpt-neo-1.3B / gpt-neo-1.5B
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/"+modelname)
+model = AutoModelForCausalLM.from_pretrained("EleutherAI/"+modelname)
 model.to(device)
 
 # with open('text.txt', 'r') as file:
@@ -39,7 +39,7 @@ def autocomplete(plaintext, to_prime=True, temperature=0.8, max_length=300):
 def arguments(text, file_name):
     # text = "Convert list of strings into ints and return its sum" # read from file
     generation = autocomplete(text)
-    f = open(f"/Users/cindy/code-generation/{folder}/output/"+file_name.rsplit('.', 1)[0]+"-output.txt", "w")
+    f = open(f"/Users/cindy/code-generation/{folder}/output/"+file_name.rsplit('.', 1)[0]+f"-{modelname}.txt", "w")
     f.write(generation)
     f.close()
 

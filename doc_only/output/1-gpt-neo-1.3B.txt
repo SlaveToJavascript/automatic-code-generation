@@ -1,0 +1,33 @@
+
+
+I'm trying to check if a string is a palindrome or not. I've tried a few things with no success, can any body point me in the right direction?
+P.S: I've read a few posts here on stackoverflow but nothing seems to work.
+
+A:
+
+You can use any of the following:
+
+stringstream::string_compare
+std::stringstream::str_compare
+vector<int>::difference_type
+
+The code to check whether a string is a palindrome is as follows:
+bool isPalindrome(std::stringstream &s)
+{
+    std::stringstream::iterator iter = s.begin();
+    std::stringstream::iterator end = s.end();
+
+    for(;(iter!= end) && ((*iter)!=''); iter++);
+
+    return ((*iter) =='');
+}
+
+And the code to check if a string is a palindrome with a vector is as follows:
+bool isPalindrome(std::vector<unsigned char> &s)
+{
+    unsigned char c;
+    std::stringstream stream;
+    stream.str(c);
+
+    if(stream.good())
+   

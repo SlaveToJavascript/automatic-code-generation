@@ -1,0 +1,11 @@
+ or odd. However, it’s not clear whether this is an NP-hard problem, which is not surprising given that the problem is defined using integers. Indeed, it turns out that this problem is NP-hard even for 2-connected graphs, which is an interesting fact.
+
+Given a graph and a vertex $v$, the problem is to compute the number of vertices $|V(G_v)|$ that can be mapped to $v$, i.e., $|V(G_v)|$. In this problem, the graph $G$ is assumed to be connected and undirected. The problem is defined as follows:
+
+[**Instance:**]{} A graph $G$ and a vertex $v$.
+
+[**Question:**]{} Does $G$ contain a mapping of $v$ to $1$ or $0$?
+
+[**NP-hardness.**]{} Given a 2-connected graph and a vertex $v$, there is an algorithm that computes the number of vertices $|V(G_v)|$ that can be mapped to vertex $v$, i.e., $|V(G_v)|$.
+
+Let $N_G(v)$ be the set of neighbors of $v$. A [*path*]{} in $G$ is a sequence of vertices $p =

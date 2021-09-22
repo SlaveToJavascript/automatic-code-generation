@@ -1,0 +1,19 @@
+ with sign
+
+I am having trouble with the following code. I am trying to get the square root of an integer with the sign -1. I'm getting the following error "cannot convert from int to float"" 
+int i = 1234;
+float fx = (float)i;
+float fy = (float)f(i);
+
+I get the following error message when I try to run it.
+cannot convert from int to float
+
+A:
+
+float f = (float)(1234);
+
+The function returns a float, not a int.
+To convert it to a float, you need to cast it, like so:
+float f = (float)(int)f;
+
+<|endoftext|>
