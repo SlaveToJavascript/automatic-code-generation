@@ -1,0 +1,3 @@
+def is_even(i):
+    """Check whether an integer is even"""
+    return i % 2

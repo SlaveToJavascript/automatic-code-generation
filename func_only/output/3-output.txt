@@ -1,0 +1,22 @@
+         # square root of i
+            a = (i/3.0)**2
+            b = 2.0 - a
+            c = 1.0/sqrt(2.0)
+            root = a+b*c
+
+        else:                # if (i**2) > (2/3)
+            root = i**3
+
+def get_tup(list):
+    tup = []
+    for i in list:
+        a = i
+        if a > 1.0:
+            tup.append(i)
+            return tup
+        else:
+            tup.append(i)
+    return tup
+
+def test_square_root():
+    list = [

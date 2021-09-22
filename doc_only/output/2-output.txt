@@ -1,0 +1,37 @@
+ or odd.
+
+The function is very simple. The input is an integer and the output is a flag that indicates whether the input is even or odd.
+
+A:
+
+Python, 64
+# python3.7
+class is_even(lambda x:x%2==0)
+
+class is_even(lambda x:x%2!=0)
+
+class is_even(lambda x:x%2!=0)
+
+def is_even(x):
+    return x%2==0
+
+a=range(10)
+print(is_even(a))
+
+Prints
+True
+
+A:
+
+CJam, 56
+j{~:$2}:~`#:~$1{}|=0
+
+Sample usage:
+#include<stdio.h>
+void is_even(int a){
+    printf("%d %d\n",a%2,a!=0);
+}
+int main(int argc,char**argv){
+    int a=0;
+    while(a){
+        a%2==0?printf("%d %d\n",a,a!=0):printf("%d %d\n",a%2,a%2!=0

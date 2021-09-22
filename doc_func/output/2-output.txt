@@ -1,0 +1,29 @@
+ == 0
+
+#----------------------------------------------------------------------------
+# Code
+#----------------------------------------------------------------------------
+
+def main():
+    t1 = time.time()
+    for i in range(10):
+        l, r = divmod(i, 10)
+        t2 = time.time()
+        if is_even(i):
+            c = 1
+        else:
+            c = 0
+        print('%d    %d' % (i, c))
+    print('%f seconds' % (t2 - t1))
+
+if __name__ == '__main__':
+    main()
+
+When I run it, the time it takes is 2.15 seconds (and it's supposed to be around 3 sec.).
+I can't figure out what's going on.
+
+A:
+
+Your if statement is the culprit.  Your condition is always true and the program is only doing its job once.
+    if is_even(i):
+    

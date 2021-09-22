@@ -1,0 +1,16 @@
+
+
+
+class CountingPalindromeTest(unittest.TestCase):
+    def check_palindrome(self, s, expected):
+        """Check a simple palindrome against a list of palindromes"""
+        self.assertEqual(self.counting_palindrome(s), expected)
+
+    def check_palindrome_slices(self, s, expected):
+        """Check a simple palindrome against a list of palindromes, using slices"""
+        self.assertEqual(self.counting_palindrome(s[:3], expected), expected)
+        self.assertEqual(self.counting_palindrome(s[3:], expected), expected)
+
+
+class PalindromeTest(unittest.TestCase):
+ 

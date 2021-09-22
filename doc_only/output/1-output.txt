@@ -1,0 +1,17 @@
+.
+
+You will need the following:
+
+A recursive method called Palindrome( s ) that checks whether a string s is a palindrome. The method returns true if string s is a palindrome, or false otherwise.
+
+A function called palindrome(s) that prints whether string s is a palindrome. The function takes a string as argument and prints it to the console.
+
+Here is the solution:
+
+function Palindrome(s) { if(!s) return false; var result = s; while(result.length > 0) { if(result[result.length - 1] =='') result = result.substring(0, result.length - 1); } return result == s; } function palindrome(s) { console.log(s); return s.length == 0? false : true; }
+
+Now that we know how to check if a string is a palindrome, let’s see how to write a function that prints the string backwards. We will use the palindrome function to print the string backwards.
+
+function printBackwards(s) { return palindrome(s); }
+
+I did not include the printBackwards(s) function in the palindrome function, because it will not use the palindrome function to print the string, but will

@@ -1,0 +1,39 @@
+
+    return s == 'S' || s == 'CS'
+end
+
+
+def is_palindrome(s)
+    return s == 'U' || s == 'UV' || s == 'UU'
+end
+
+
+# The following code is to test if the string is palindrome or not,
+# it is to avoid a lot of if/else, so we can give the user a choice how
+#to use this.
+
+def is_palindrome(s)
+    return false if s == 'N' || s == 'NI' || s == 'NN'
+
+    # first test if it is even.
+    if s == 'S' || s == 'CS'
+        return false
+    end
+
+    if s == 'U' || s == 'UV' || s == 'UU'
+        return false
+    end
+
+    # second test is if it is palindromic.
+    if i < str.size - 1
+        return false
+    end
+
+    # if i is the last letter return true.
+    return true
+end
+
+
+
+
+def is_palindromic(

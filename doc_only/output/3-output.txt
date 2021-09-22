@@ -1,0 +1,34 @@
+.");
+    }
+
+    void main()
+    {
+        cout << test_square_root_int();
+    }
+
+Here's the problem:
+
+    **main.cpp**
+    **int main()**
+    **{**
+    **}**
+
+Here's what's happening: The `test_square_root_int()` function is passed the `int` that is stored in `n` during compilation. That's all. It doesn't work.
+
+The solution:
+
+    void test_square_root_int()
+    {
+        int n = 3;
+
+        cout << n << endl;
+        cout << n << endl;
+        cout << n << endl;
+        cout << n << endl;
+        cout << n << endl;
+        cout << n << endl;
+        cout << n << endl;
+        cout << n << endl;
+    }
+
+When you build a
