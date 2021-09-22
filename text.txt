@@ -1,0 +1,1 @@
+Convert list of strings into ints and return its sum
