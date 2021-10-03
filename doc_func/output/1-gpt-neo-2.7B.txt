@@ -1,16 +1,13 @@
 
 
+def is_wordlike(s):
+    """Check whether a string is a word like string"""
+    for i in range(len(s) - 1, -1, -1):
+        if any(ord(c) in string.ascii_lowercase for c in s[i:i+1]) or \
+           any(ord(c) in string.ascii_uppercase for c in s[i:i+1]) or \
+           any(ord(c) > 0 for c in s[i:i+1]) or \
+           any(ord(c) < 0 for c in s[i:i+1])):
+            return False
+    return True
 
-class CountingPalindromeTest(unittest.TestCase):
-    def check_palindrome(self, s, expected):
-        """Check a simple palindrome against a list of palindromes"""
-        self.assertEqual(self.counting_palindrome(s), expected)
-
-    def check_palindrome_slices(self, s, expected):
-        """Check a simple palindrome against a list of palindromes, using slices"""
-        self.assertEqual(self.counting_palindrome(s[:3], expected), expected)
-        self.assertEqual(self.counting_palindrome(s[3:], expected), expected)
-
-
-class PalindromeTest(unittest.TestCase):
- 
+def is_letter_like

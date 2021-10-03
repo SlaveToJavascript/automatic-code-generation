@@ -3,14 +3,15 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 # app = Flask(__name__)
 import os
 
-folder = 'doc_func' # doc_only / func_only / doc_func
+folder = 'func_only' # doc_only / func_only / doc_func
 path = f"/Users/cindy/code-generation/{folder}/input"
 os.chdir(path)
 
 device = "cpu"
-modelname = "gpt-neo-1.3B" # gpt-neo-2.7B / gpt-neo-1.3B / gpt-neo-1.5B
-tokenizer = AutoTokenizer.from_pretrained("EleutherAI/"+modelname)
-model = AutoModelForCausalLM.from_pretrained("EleutherAI/"+modelname)
+source = "microsoft" # EleutherAI / microsoft
+modelname = "CodeGPT-small-py-adaptedGPT2" # gpt-neo-2.7B / gpt-neo-1.3B / gpt-neo-1.5B / CodeGPT-small-py-adaptedGPT2 / CodeGPT-small-py
+tokenizer = AutoTokenizer.from_pretrained(f"{source}/{modelname}")
+model = AutoModelForCausalLM.from_pretrained(f"{source}/{modelname}")
 model.to(device)
 
 # with open('text.txt', 'r') as file:

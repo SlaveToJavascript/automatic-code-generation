@@ -1,0 +1,1 @@
+ and not is_odd(j)): raise TemplateSyntaxError("%r tag requires an even number argument at position %i" % (self.filename, i)) return nodes.Output([node.value], lineno=i.lineno) </s>

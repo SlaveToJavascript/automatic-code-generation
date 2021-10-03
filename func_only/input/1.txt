@@ -1,1 +1,1 @@
-def is_palendrome(s)
+def is_palindrome(s)

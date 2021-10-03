@@ -1,0 +1,1 @@
+ among phrases. :param phrase: The Pinyin string. :param pos: The position of the token. :param neg: The position of the token. :param phrase: The phrase. :param startindex: The starting index. :param endindex: The ending index. :return: An iterator over punctuations. """ return self.genPinyinStringIter(phrase, startindex, endindex, phrase, startindex, endindex) </s>

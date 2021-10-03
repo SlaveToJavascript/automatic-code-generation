@@ -1,0 +1,1 @@
+ and s.startswith(MAGIC_PART): if not p.search(MAGIC_PART): return False else: if p.search(MAGIC_PART) and s.startswith(MAGIC_PART): return True return False </s>

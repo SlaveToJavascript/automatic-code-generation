@@ -1,0 +1,1 @@
+ negative. """ if self._can('integer'): return int(value) return self._get_value('int') </s>

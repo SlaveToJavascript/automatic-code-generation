@@ -1,29 +1,27 @@
 
 
-The next thing we can do is to create a list of the squares of the numbers
-that we've seen so far, which we can access using square_root().
-def square_numbers():
-    """Return a list with the squares of the numbers we've seen"""
-    list(square_root(square_numbers))
+def mod(m, n):
+    """Return the remainder after division of numbers m and n"""
+    return m % n
 
-We are now ready to create the following solution to the problem. We will
-have to create a function that takes in two integers, and returns the
-square root of the first one, and then square the second one. Using this
-function, our program will return the following result:
+def mod_square(m, n):
+    """Return the remainder after division of numbers m and n which are multiples of m"""
+    return m % n
 
-    >>> a = 20
-    >>> b = 7
-    >>> square_numbers()[0]
-    20
-    >>> square_numbers()[1]
-    15
-    >>> square_numbers()[2]
-    35
-    >>> square_numbers()[0]
-    40
-    >>> square_numbers()[1]
-    32
-    >>> square_numbers()[2]
-    70
+def mod_mod(m, n):
+    """Return the remainder after division of numbers m and n, which are multiples of m and n"""
+    return m % n
 
-We should then use the following
+def mod_div(m, n):
+    """Return the remainder after division of numbers m and n, which are multiples of m and n"""
+    return m % n
+
+def mod_mod_square(m, n):
+    """Return the remainder after division of numbers m and n, which are multiples of m and n"""
+    return m % n
+
+def mod_mod_mod(m, n):
+    """Return the remainder after division of numbers m and n, which are multiples of m and n"""
+    return m % n
+
+def mod_mod_mod_square(m, n

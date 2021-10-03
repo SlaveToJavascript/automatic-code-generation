@@ -1,60 +1,15 @@
- { print "is even? $i" ; true ; }
 
-[0].is_even()
-is even? 0
-is even? 1
+  i % 2 == 0
+end
 
-[1].is_even()
-is even? 0
-is even? 1
+You don't even need to convert the range into an array (which is the correct method):
+def is_even(i)
+  (i % 2 == 0) == 0
+end
 
-[2].is_even()
-is even? 0
-is even? 1
+Or, in Ruby, (I think) a method is better:
+def is_even(i)
+  (i % 2 == 0).zero?
+end
 
-[3].is_even()
-is even? 0
-is even? 1
-
-[4].is_even()
-is even? 0
-is even? 1
-
-[5].is_even()
-is even? 0
-is even? 1
-
-[6].is_even()
-is even? 0
-is even? 1
-
-[7].is_even()
-is even? 0
-is even? 1
-
-[8].is_even()
-is even? 0
-is even? 1
-
-[9].is_even()
-is even? 0
-is even? 1
-
-[10].is_even()
-is even? 0
-is even? 1
-
-[11].is_even()
-is even? 0
-is even? 1
-
-[12].is_even()
-is even? 0
-is even? 1
-
-[13].is_even()
-is even? 0
-is even? 1
-
-[14].is_even()
-is even? 0
+<|endoftext|>

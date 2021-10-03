@@ -1,4 +1,4 @@
-def is_palendrome(s):
+def is_palindrome(s):
     """Check whether a string is a palindrome"""
     for i in range(len(s) - 1, -1, -1):
         if s[i + 1] == s[i]:
